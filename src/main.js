@@ -13,6 +13,7 @@ function calculateResult() {
 }
 
 function checkValue(value, desc) {
+    value = value.trim();
     if (value == undefined || value == null || value == "") {
         throw new Error(`${desc} should be defined`);
     }
