@@ -1,0 +1,19 @@
+.traffic-light {
+    border-radius: 50%;
+    border: 2px solid black;
+    display: block;
+    height: 75px;
+    margin: 20px;
+    padding: 20px;
+    width: 75px;
+    background-color: grey;
+}
+.traffic-light--red {
+    background-color: red;
+}
+.traffic-light--green {
+    background-color: green;
+}
+.traffic-light--yellow {
+    background-color: yellow;
+}
