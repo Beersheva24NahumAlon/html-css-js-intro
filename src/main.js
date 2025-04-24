@@ -1,4 +1,4 @@
-const id = 100;
+let id = 100;
 
 const formEl = document.getElementById("formId");
 formEl.addEventListener("submit", event => {
@@ -15,7 +15,7 @@ function addRecordToTable(recordObj) {
 function getHtmlRecord(recordObj) {
     return `
         <tr>
-            <td>${recordObj.id}</td>
+            <td>${id++}</td>
             <td>${recordObj.name}</td>
             <td>${recordObj.department}</td>
             <td>${recordObj.salary}</td>
