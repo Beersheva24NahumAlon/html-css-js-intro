@@ -10,14 +10,33 @@
 </head>
 
 <body>
-    <form action="" method="post">
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>department</th>
+                <th>salary</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyId">
+
+        </tbody>
+    </table>
+    <form id="formId">
+        <label>name: </label>
         <input type="text" name="name" placeholder="enter name">
+        <label>department: </label>
         <select name="department">
             <option disabled selected>--select department--</option>
             <option value=QA>QA</option>
             <option value=Audit>Audit</option>
             <option value=Menegment>Menegment</option>
         </select>
+        <label>salary:</label>
+        <input type="text" name="salary" placeholder="enter salay">
+        <button type="submit">save</button>
+        <button type="reset">reset</button>
     </form>
     <script src="src/main.js"></script>
 </body>
