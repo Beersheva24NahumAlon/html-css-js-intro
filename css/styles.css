@@ -1,7 +1,40 @@
-.image {
-    float: left;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    margin-left: 0px;
-    margin-top: 0px;
+html {
+    font-size: 62.5%;
+}
+.container {
+    border: 2px solid, red;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    /* flex-wrap: wrap; */
+    align-content: center;
+}
+
+.box {
+    background-color: gold;
+    flex-basis: 15rem;
+    font-size: 2rem;
+    height: 10rem;
+    vertical-align: center;
+    margin: 2rem;
+    max-width: 10rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.box-1 {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.box-2 {
+    
+}
+
+.box-3 {
+
+    
 }
