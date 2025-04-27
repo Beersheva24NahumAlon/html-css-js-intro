@@ -18,8 +18,10 @@ html {
 
 .box-1 {
     background-color: aqua;
-    width: 30rem;
+    width: 40rem;
     height: 20rem;
+    font-size: 2rem;
+    overflow: auto;
 
 }
 
