@@ -1,38 +1,7 @@
-html {
-    font-size: 62.5%;
-}
-
-.boxes {
-    border: 2px solid black;
-    height: 80%;
-    width: 80vw;
-}
-
-.box {
-    height: 20vw;
-    border: 2px solid black;
-    margin: 10px;
-    /* padding: 5x; */
-    width: 20vh;
-}
-
-.box-1 {
-    background-color: aqua;
-    width: 40rem;
-    height: 20rem;
-    font-size: 2rem;
-    overflow: auto;
-
-}
-
-.box-2 {
-    
-}
-
-.box-3 {
-    
-}
-
-.box-4 {
-    
+.image {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    margin-top: 0px;
 }
