@@ -1,57 +1,35 @@
-html {
-    font-size: 62.5%;
+body {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0px;
+    min-width: 70vh;
 }
-.container {
-    border: 2px solid, red;
-    width: 90vw;
+
+.board {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 70vh;
+}
+
+.row {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 90vh;
-    align-content: center;
-    flex-wrap: wrap;
+    height: 12.5%;
 }
 
-.box {
-    background-color: gold;
-    font-size: 2rem;
-    height: 10rem;
-    vertical-align: center;
-    margin: 2rem;
-    width: 10rem;
+.cell {
+    width: 12.5%;
 }
 
-.box-1 {
-
+.row-1 .cell:nth-child(even) {
+    background-color: black;
 }
 
-.box:hover {
-    background-color: darkgoldenrod;
+.row-2 .cell:nth-child(odd) {
+    background-color: black;
 }
 
-.container div:nth-child(4n + 2) {
-    background-color: brown;
-    color: white;
-}
-
-.container:hover {
-    background-color: bisque;
-}
-
-.container div:last-child p{
-    font-size: 1rem;
-}
-
-.container div:last-child p::first-line{
-    font-size: 2rem;
-}
-
-.container div:last-child p::before {
-    content: "Kuku";
-    font-size: 2rem;
-}
-
-p {
-    font-size: 2rem;
-}
