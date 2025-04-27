@@ -13,10 +13,11 @@
     <table>
         <thead>
             <tr>
-                <th>id</th>
+                <th># order</th>
                 <th>name</th>
-                <th>department</th>
-                <th>salary</th>
+                <th>coffee type</th>
+                <th>take away</th>
+                <th>price</th>
             </tr>
         </thead>
         <tbody id="tbodyId">
@@ -27,16 +28,19 @@
         <label>name:
             <input type="text" required name="name" placeholder="enter name" pattern="[A-Z][a-z]{2,10}">
         </label>
-        <label>department:
-            <select name="department" required>
-                <option value="" selected>--select department--</option>
-                <option value=QA>QA</option>
-                <option value=Audit>Audit</option>
-                <option value=Menegment>Menegment</option>
+        <label>coffee type:
+            <select name="coffeeType" required>
+                <option value="" selected>--select coffee type--</option>
+                <option value=americano>americano</option>
+                <option value=capuchino>capuchino</option>
+                <option value=espresso>espresso</option>
             </select>
         </label>
-        <label>salary:
-            <input type="number" required name="salary" min="5000" max="50000" placeholder="enter salay">
+        <label>take away:
+            <input type="checkbox" name="takeAway">
+        </label>
+        <label>price:
+            <input type="number" required name="price" min="8" max="20" placeholder="enter price">
         </label>
         <button type="submit">save</button>
         <button type="reset">reset</button>

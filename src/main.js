@@ -1,3 +1,11 @@
+/* <tr>
+<th># order</th>
+<th>name</th>
+<th>coffee type</th>
+<th>take away</th>
+<th>price</th>
+</tr> */
+
 let id = 100;
 
 const formEl = document.getElementById("formId");
@@ -17,8 +25,17 @@ function getHtmlRecord(recordObj) {
         <tr>
             <td>${id++}</td>
             <td>${recordObj.name}</td>
-            <td>${recordObj.department}</td>
-            <td>${recordObj.salary}</td>
+            <td>${recordObj.coffeeType}</td>
+            <td>${checkBoxOutput(recordObj.takeAway)}</td>
+            <td>${recordObj.price}</td>
         </tr>
     `;
+}
+
+function checkBoxOutput(checkBox) {
+    res = ""
+    if (checkBox == "on") {
+        res = "&#9745";
+    }
+    return res;
 }
