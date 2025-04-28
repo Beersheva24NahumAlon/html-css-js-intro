@@ -1,33 +1,30 @@
+html {
+    font-size: 62.5%;
+}
 body {
     align-items: center;
     display: flex;
     height: 100vh;
     justify-content: center;
-    margin: 0px;
-    min-width: 70vh;
 }
-
-.board {
+.container {
     border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    height: 70vh;
-    width: 70vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    height: 80vh;
+    width: 80vh;
 }
-
-.row {
-    display: flex;
-    flex-direction: row;
-    height: 12.5%;
-}
-
 .cell {
-    width: 12.5%;
+    
 }
-
-.board .row:nth-child(odd) .cell:nth-child(even), 
-.board .row:nth-child(even) .cell:nth-child(odd) {
+.container .cell:nth-child(16n+1),
+.container .cell:nth-child(16n+3),
+.container .cell:nth-child(16n+5),
+.container .cell:nth-child(16n+7),
+.container .cell:nth-child(16n+10),
+.container .cell:nth-child(16n+12),
+.container .cell:nth-child(16n+14),
+.container .cell:nth-child(16n+16) {
     background-color: black;
 }
-
 
