@@ -8,23 +8,31 @@ body {
     justify-content: center;
 }
 .container {
-    border: 1px solid black;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     height: 80vh;
     width: 80vh;
 }
-.cell {
-    
+.box1 {
+    grid-row: 1;
+    grid-column: 1;
+    background-color: blue;
 }
-.container .cell:nth-child(16n+1),
-.container .cell:nth-child(16n+3),
-.container .cell:nth-child(16n+5),
-.container .cell:nth-child(16n+7),
-.container .cell:nth-child(16n+10),
-.container .cell:nth-child(16n+12),
-.container .cell:nth-child(16n+14),
-.container .cell:nth-child(16n+16) {
-    background-color: black;
+.box2 {
+    grid-row: 1 / 3;
+    grid-column: 2 / 4;
+    background-color: grey;
 }
+.box3 {
+    grid-row: 2 / 3;
+    grid-column: 1;
+    background-color: red; 
+}
+.box4 {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    background-color: green;  
+}
+
 
