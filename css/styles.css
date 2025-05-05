@@ -1,94 +1,15 @@
-html {
-    font-size: 62.5%;
+h1 {
+    font-size: 3rem;
 }
-body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px;
+p {
+    font-size: 1rem;
 }
-main { 
-    width: 90vw;
-    height: 90%;
+.serif {
+    font-family: 'Times New Roman', Times, serif;
 }
-header {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-    background-color: bisque;
+.sans-serif {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-.detailed {
-    display: flex;
-    justify-content: center;
+.monospace {
+    font-family: 'Courier New', Courier, monospace;
 }
-.detailed figure {
-    width: 80%;
-    margin: 2rem 0rem;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    position: relative;
-}
-.detailed figure img {
-    max-width: 100%;
-    max-height: 100%;
-}
-.detailed figure figcaption {
-    background-color:rgb(40, 40, 40);
-    color: white;
-    padding: 1rem;
-    position: absolute;
-    bottom: 0rem;
-    width: 100%;
-}
-
-.thumbnails {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.thumbnails figure {
-    width: 10rem;
-    margin: 1rem;
-    position: relative;
-    border-radius: 0.5rem;
-    overflow: hidden;
-}
-.thumbnails figure img {
-    border-radius: 0.5rem;
-    max-width: 100%;
-    max-height: 100%;
-
-}
-.thumbnails figure figcaption {
-    background-color:rgb(40, 40, 40);
-    color: white;
-    padding: 1rem;
-    position: absolute;
-    bottom: 0rem;
-    width: 100%;
-}
-
-@media screen and (min-width: 500px) {
-    main { 
-        display: grid;
-        grid-template-columns: 20% 1fr;
-    }
-    .detailed {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-    }
-    .thumbnails {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        overflow: scroll;
-    }
-    .thumbnails figure {
-        width: 15rem;
-    }
-}
-
