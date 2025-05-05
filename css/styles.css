@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Fira-Sans;
+    src: url(./fonts/FiraSans-Light.otf);
+}
 h1 {
     font-size: 3rem;
 }
@@ -12,4 +16,14 @@ p {
 }
 .monospace {
     font-family: 'Courier New', Courier, monospace;
+}
+.roboto {
+    font-family: Roboto;
+    font-weight: 300;
+}
+.roboto_text {
+    font-size: 2rem;
+}
+.firaSans {
+    font-family: Fira-Sans;
 }
