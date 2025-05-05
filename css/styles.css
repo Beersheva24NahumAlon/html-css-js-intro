@@ -18,7 +18,7 @@ p {
 .serif {
     font-family: 'Times New Roman', Times, serif;
 }
-.sans-serif {
+.sansSerif {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 .monospace {
@@ -30,7 +30,24 @@ p {
 }
 .roboto_text {
     font-size: 2rem;
+    text-align: left;
+    text-decoration:underline double;
+    overflow: hidden;
+    width: 30ch;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.roboto_text:hover {
+    white-space: wrap;
+    text-overflow:unset;
+    text-decoration: none;
+    width: 100%;
 }
 .firaSans {
     font-family: Fira-Sans;
+}
+.sansSerif_text {
+    column-count: 2;
+    column-gap: 3rem;
+    column-rule-style: solid;
 }
