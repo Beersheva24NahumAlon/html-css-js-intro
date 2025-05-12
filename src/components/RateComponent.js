@@ -18,7 +18,7 @@ function getRate(ratePercent, starsNumber) {
 
 function getRatingHTML({fullStars, halfStars, emptyStars}) {
     const fullStarHTML = "<i class='fa-solid fa-star'></i>";
-    const halfStarHTML = "<i class='fa fa-star-half-o'></i>";
+    const halfStarHTML = "<i class='fa-regular fa-star-half-stroke'></i>";
     const emptyStarHTML = "<i class='fa-regular fa-star'></i>";
     const res = fullStarHTML.repeat(fullStars) + halfStarHTML.repeat(halfStars) + emptyStarHTML.repeat(emptyStars);
     return res;

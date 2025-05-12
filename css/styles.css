@@ -1,9 +1,4 @@
-.meal {
-    width: 400px;
-    height: 400px;
-    filter: grayscale(100%);
-}
-
-.meal:hover {
-    filter: grayscale(0);
+.rate {
+    font-size: 3rem;
+    color: goldenrod;
 }
