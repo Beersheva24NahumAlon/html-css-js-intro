@@ -1,4 +1,9 @@
-.icon {
-    font-size: 10rem;
-    color: goldenrod;
+.meal {
+    width: 400px;
+    height: 400px;
+    filter: grayscale(100%);
+}
+
+.meal:hover {
+    filter: grayscale(0);
 }
