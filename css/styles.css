@@ -1,19 +1,8 @@
-.drink {
-    width: 100vw;
-    height: 100vw;
-    object-fit: cover;
-}
-
-@media screen and (min-width:500px) {
-    .drink {
-        width: 50vw;
-        height: 50vw;
-    }
-}
-
-@media screen and (min-width:1000px) {
-    .drink {
-        width: 35vw;
-        height: 35vw;
-    }
+body {
+    background: url("../images/bg-sanfrancisco.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300vh;
+    margin: 0;
+    background-attachment: fixed;
 }
