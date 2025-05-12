@@ -1,5 +1,4 @@
-body {
-    background: url("../images/endless-constellation.svg");
-    height: 300vh;
-    margin: 0;
+.icon {
+    font-size: 10rem;
+    color: goldenrod;
 }
