@@ -10,12 +10,11 @@
 </head>
 
 <body>
-    <img 
-        srcset="images/meal.jpg 400w, images/meal@2x.jpg 800w, images/meal@3x.jpg 1200w" 
-        sizes="(max-width:500) 100vw, (min-width:501) 50vw, 35vw"
-        alt="plate with salmon and spices" 
-        class="drink"
-    >
+    <picture class="meal">
+        <source type="image/webp" srcset="images/meal.webp 1x, images/meal@2x.webp 2x">
+        <source type="image/jpg" srcset="images/meal.jpg 1x, images/meal@2x.jpg 2x">
+        <img alt="meal">
+    </picture>
     <script src="src/main.js"></script>
 </body>
 
